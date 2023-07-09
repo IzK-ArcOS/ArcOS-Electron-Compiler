@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "electron ."
   },
-  "author": "",
+  "author": "IzK-ArcOS <izaak.kuipers@gmail.com> (https://izk-arcos.nl/)",
+  "homepage": "https://izk-arcos.nl",
   "license": "ISC",
   "devDependencies": {
     "electron": "^25.2.0",
@@ -19,7 +20,13 @@
     "mac": {
       "category": "com.izkarcos"
     },
-    "icon": "ico/release.png",
+    "linux": {
+      "icon": "ico/1024x1024.png"
+    },
+    "deb": {
+      "icon": "ico/1024x1024.png"
+    },
+    "icon": "ico/1024x1024.png",
     "nsis": {
       "language": "1033",
       "installerLanguages": [
