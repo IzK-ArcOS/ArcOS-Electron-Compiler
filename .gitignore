@@ -1,0 +1,4 @@
+./temp
+build/dist
+build/frontend
+build/node_modules

@@ -1,0 +1,36 @@
+{
+  "name": "arcos-desktop",
+  "version": "1.0.0",
+  "description": "ArcOS Electron",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^25.2.0",
+    "electron-builder": "^24.4.0"
+  },
+  "build": {
+    "productName": "ArcOS Desktop",
+    "appId": "izk.arcos",
+    "mac": {
+      "category": "com.izkarcos"
+    },
+    "icon": "ico/release.png",
+    "nsis": {
+      "language": "1033",
+      "installerLanguages": [
+        "en_US"
+      ]
+    },
+    "files": [
+      "ico/*",
+      "frontend/**/*",
+      "package.json",
+      "index.js"
+    ]
+  }
+}
