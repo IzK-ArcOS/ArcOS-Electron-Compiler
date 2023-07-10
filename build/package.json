@@ -21,12 +21,12 @@
       "category": "com.izkarcos"
     },
     "linux": {
-      "icon": "ico/1024x1024.png"
+      "icon": "ico/256x256.png"
     },
     "deb": {
-      "icon": "ico/1024x1024.png"
+      "icon": "ico/256x256.png"
     },
-    "icon": "ico/1024x1024.png",
+    "icon": "ico/256x256.png",
     "nsis": {
       "language": "1033",
       "installerLanguages": [
