@@ -4,9 +4,9 @@ if exist ".\temp" goto :update
 if not exist ".\temp" goto :fresh
 
 :fresh
-  rmdir temp /s/q
-  rmdir build\frontend /s/q
-  rmdir build\dist /s/q
+  rmdir temp /s/q >nul
+  rmdir build\frontend /s/q >nul
+  rmdir build\dist /s/q >nul
 
   git clone https://github.com/IzK-ArcOS/ArcOS-Frontend temp
   
@@ -15,8 +15,8 @@ if not exist ".\temp" goto :fresh
   goto :run
 
 :update
-  rmdir build\frontend /s/q
-  rmdir build\dist /s/q
+  rmdir build\frontend /s/q >nul
+  rmdir build\dist /s/q >nul
   
   cd temp
   
