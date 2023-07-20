@@ -15,10 +15,14 @@
     "electron-builder": "^24.4.0"
   },
   "build": {
-    "productName": "ArcOS Desktop",
+    "artifactName": "${productName}_${version}_${os}_${arch}.${ext}",
+    "productName": "ArcOS",
     "appId": "izk.arcos",
     "mac": {
       "category": "public.app-category.productivity"
+    },
+    "win": {
+      "icon": "icons/256x256.png"
     },
     "nsis": {
       "language": "1033",

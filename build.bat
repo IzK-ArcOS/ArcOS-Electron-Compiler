@@ -1,4 +1,4 @@
-@echo off
+@echo on
 
 if exist ".\temp" goto :update
 if not exist ".\temp" goto :fresh
