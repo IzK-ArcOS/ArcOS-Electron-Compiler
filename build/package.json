@@ -18,15 +18,8 @@
     "productName": "ArcOS Desktop",
     "appId": "izk.arcos",
     "mac": {
-      "category": "com.izkarcos"
+      "category": "public.app-category.productivity"
     },
-    "linux": {
-      "icon": "ico/256x256.png"
-    },
-    "deb": {
-      "icon": "ico/256x256.png"
-    },
-    "icon": "ico/256x256.png",
     "nsis": {
       "language": "1033",
       "installerLanguages": [
@@ -35,6 +28,7 @@
     },
     "files": [
       "ico/*",
+      "icons/*",
       "frontend/**/*",
       "package.json",
       "index.js"

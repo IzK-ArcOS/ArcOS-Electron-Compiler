@@ -26,6 +26,8 @@ function fresh() {
 function run() {
     npm install --force
     npx vite build --outDir ../build/frontend
+
+    echo "desktop" > ../build/frontend/desktop
     
     cd ../build
     
@@ -38,7 +40,7 @@ function run() {
         ;;
         
         *)
-            npx electron-builder build --x64 --linux deb appimage tar.xz rpm flatpak
+            npx electron-builder build --x64 --linux deb appimage tar.xz rpm
         ;;
     esac
 }

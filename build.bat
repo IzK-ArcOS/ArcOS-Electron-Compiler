@@ -28,6 +28,8 @@ if not exist ".\temp" goto :fresh
   call npm install --force
   call npx vite build --outDir ..\build\frontend
   
+  echo desktop >..\build\frontend
+
   cd ..\build
   
   call npx electron-builder build --x64
