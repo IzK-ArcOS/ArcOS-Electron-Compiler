@@ -1,6 +1,6 @@
 {
   "name": "arcos-desktop",
-  "version": "1.0.0",
+  "version": "5.0.8",
   "description": "ArcOS Electron",
   "main": "index.js",
   "scripts": {
