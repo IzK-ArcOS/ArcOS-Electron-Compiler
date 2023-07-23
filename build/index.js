@@ -14,6 +14,7 @@ app.on("ready", async () => {
     center: true,
     resizable: true,
     fullscreenable: true,
+    fullscreen: true,
     icon: await getIcon(),
   });
 
