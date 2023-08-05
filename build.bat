@@ -28,7 +28,7 @@ if not exist ".\temp" goto :fresh
   call npm install --force
   call npx vite build --outDir ..\build\frontend
   
-  echo desktop >..\build\frontend
+  echo desktop >..\build\frontend\desktop
 
   cd ..\build
   
