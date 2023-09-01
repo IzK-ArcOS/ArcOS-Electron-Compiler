@@ -29,7 +29,7 @@ if not exist ".\temp" goto :fresh
   call npx vite build --outDir ..\build\frontend
   
   echo desktop >..\build\frontend\desktop
-  git rev-parse --verify HEAD >..\build\frontend\build
+  git rev-parse --short HEAD >..\build\frontend\build
 
   cd ..\build
   
