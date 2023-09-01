@@ -26,8 +26,9 @@ function fresh() {
 function run() {
     npm install --force
     npx vite build --outDir ../build/frontend
-
+    
     echo "desktop" > ../build/frontend/desktop
+    git rev-parse --verify HEAD > ../build/rontend/build
     
     cd ../build
     
