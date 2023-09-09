@@ -10,7 +10,7 @@ app.on("ready", async () => {
     minWidth: 1000,
     minHeight: 720,
     backgroundColor: "#000",
-    title: "ArcOS",
+    title: "ArcOS ESR",
     center: true,
     resizable: true,
     fullscreenable: true,

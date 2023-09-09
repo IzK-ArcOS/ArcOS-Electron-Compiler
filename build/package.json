@@ -1,7 +1,7 @@
 {
-  "name": "arcos-desktop",
+  "name": "arcos-desktop-esr",
   "version": "5.0.10",
-  "description": "ArcOS Electron",
+  "description": "ArcOS Extended Support Release",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -11,13 +11,13 @@
   "homepage": "https://izk-arcos.nl",
   "license": "ISC",
   "devDependencies": {
-    "electron": "^25.2.0",
-    "electron-builder": "^24.4.0"
+    "electron": "22",
+    "electron-builder": "^21"
   },
   "build": {
-    "artifactName": "${productName}_${version}_${os}_${arch}.${ext}",
+    "artifactName": "${productName}_${version}_${os}_${arch}_esr.${ext}",
     "productName": "ArcOS",
-    "appId": "izk.arcos",
+    "appId": "izk.arcos.esr",
     "mac": {
       "category": "public.app-category.productivity"
     },
