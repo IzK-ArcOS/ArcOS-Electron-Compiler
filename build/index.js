@@ -3,7 +3,7 @@ const { readFile } = require("fs/promises");
 
 let win;
 
-app.on("ready", async () => {
+app.on("ready", () => {
   win = new BrowserWindow({
     width: 1000,
     height: 720,
@@ -15,7 +15,7 @@ app.on("ready", async () => {
     resizable: true,
     fullscreenable: true,
     fullscreen: true,
-    icon: await getIcon(),
+    icon: getIcon(),
   });
 
   globalShortcut.register("Alt+Enter", () => {
@@ -58,14 +58,6 @@ app.on("ready", async () => {
   });
 });
 
-async function getIcon() {
-  try {
-    const mode = await readFile(`${__dirname}/frontend/mode`, {
-      encoding: "utf-8",
-    });
-
-    return `${__dirname}/ico/${mode}.png`;
-  } catch {
-    return `${__dirname}/ico/release.png`;
-  }
+function getIcon() {
+  return `${__dirname}/ico/esr.png`;
 }
