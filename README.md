@@ -2,6 +2,8 @@
 
 This repository clones the latest ArcOS frontend and compiles redistributables for users to install on their system. Current compatibility has been checked to comply with Windows, MacOS and Linux systems.
 
+> **NOTE**: ArcOS ESR can be found in the (`esr`)[https://github.com/IzK-ArcOS/ArcOS-Electron-Compiler/tree/esr/] branch of this repository.
+
 ## Getting started
 
 Before you get started, please make sure you have the prerequisites installed on your system:
