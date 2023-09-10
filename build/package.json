@@ -1,6 +1,6 @@
 {
   "name": "arcos-desktop-esr",
-  "version": "5.0.10",
+  "version": "5.0.11",
   "description": "ArcOS Extended Support Release",
   "main": "index.js",
   "scripts": {
