@@ -1,8 +1,6 @@
-# ArcOS Electron Compiler
+# ArcOS Electron Compiler - Rolling Releases
 
 This repository clones the latest ArcOS frontend and compiles redistributables for users to install on their system. Current compatibility has been checked to comply with Windows, MacOS and Linux systems.
-
-> **NOTE**: ArcOS ESR can be found in the [`esr`](https://github.com/IzK-ArcOS/ArcOS-Electron-Compiler/tree/esr/) branch of this repository.
 
 ## Getting started
 
@@ -25,24 +23,18 @@ $ sudo n latest
 To get started, clone the IzK-ArcOS/ArcOS-Electron-Compiler repository:
 
 ```bash
-git clone https://github.com/IzK-ArcOS/ArcOS-Electron-Compiler
+$ git clone https://github.com/IzK-ArcOS/ArcOS-Electron-Compiler
 ```
 
-Next there are two seperate build scripts you can use, depending on your operating system.
+Next, use the following command to build it on either MacOS or Linux (Windows is not supported for the rolling release):
 
-- For Linux and MacOS systems, use:
-  ```bash
-  $ ./build.sh
-  ```
-- For Windows systems, use:
-  ```bat
-  > .\build.bat
-  ```
+```bash
+$ ./build.sh
+```
 
 Once the process has completed without any errors you can check `./build/dist` for the outputted files:
 | Operating System | Filename |
 |----------------------------|-------------------------------------------------------------|
-| Windows | `ArcOS Desktop Setup X.X.X.exe` |
 | Debian | `arcos-desktop_X.X.X_amd64.deb` |
 | Other linux distributions | `ArcOS Desktop-X.X.X.AppImage`,`ArcOS Desktop-X.X.X.tar.xz` |
 | MacOS | `ArcOS Desktop-X.X.X.dmg` |

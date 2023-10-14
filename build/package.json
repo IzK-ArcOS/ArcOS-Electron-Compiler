@@ -1,7 +1,7 @@
 {
-  "name": "arcos-desktop",
-  "version": "5.0.10",
-  "description": "ArcOS Electron",
+  "name": "arcos-desktop-rolling",
+  "version": "5.0.11",
+  "description": "ArcOS Electron - Rolling Release",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -15,7 +15,7 @@
     "electron-builder": "^24.4.0"
   },
   "build": {
-    "artifactName": "${productName}_${version}_${os}_${arch}.${ext}",
+    "artifactName": "${productName}_${version}_${os}_${arch}_rolling.${ext}",
     "productName": "ArcOS",
     "appId": "izk.arcos",
     "mac": {
