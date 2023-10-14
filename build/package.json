@@ -15,20 +15,11 @@
     "electron-builder": "^24.4.0"
   },
   "build": {
-    "artifactName": "${productName}_${version}_${os}_${arch}_rolling.${ext}",
+    "artifactName": "arcos_rolling.${ext}",
     "productName": "ArcOS",
     "appId": "izk.arcos",
     "mac": {
       "category": "public.app-category.productivity"
-    },
-    "win": {
-      "icon": "icons/256x256.png"
-    },
-    "nsis": {
-      "language": "1033",
-      "installerLanguages": [
-        "en_US"
-      ]
     },
     "files": [
       "ico/*",
