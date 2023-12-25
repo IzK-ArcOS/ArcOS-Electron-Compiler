@@ -32,5 +32,7 @@ if not exist ".\temp" goto :fresh
   git rev-parse --short HEAD >..\build\frontend\build
 
   cd ..\build
+
+  call npm install --force
   
   call npx electron-builder build --x64
